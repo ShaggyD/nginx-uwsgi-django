@@ -16,7 +16,4 @@ docker run --rm -it --name tmp-django-server -v `pwd`:/opt/application/ -p 80:80
 You must have a enviroment variable with your django application name like `-e "APPLICATION=audi"` where *audi* is the project name/directory. 
 
 
-You can mount the application volume to run a specific application.  The default volume inside in the container is `/opt/django/app`.  Here is an example:
-`docker run -p 80 -d -e MODULE=myapp -v /home/mbentley/myapp:/opt/django/app mbentley/django-uwsgi-nginx`
-
-By default, this just runs a default 'welcome to django' project.
+By default, if you have no application in your current directory or volume mounted it will create a sample django project and display the default 'welcome to django' page.
