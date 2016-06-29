@@ -1,6 +1,6 @@
 Docker Nginx, Uwsgi and Django Image
 ==================
-This image provids a fully functional image that runs a django project through nginx and uwsgi.
+This project provids a fully functional docker image that runs a django project through nginx and uwsgi.
 
 ## Quick Start:
 To pull the image: 
