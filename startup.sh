@@ -14,7 +14,7 @@ else
 fi
 
 cd /opt/application
-python manage.py collectstatic -l
+python manage.py collectstatic -l --noinput
 python manage.py migrate
 
 exec /usr/bin/supervisord
