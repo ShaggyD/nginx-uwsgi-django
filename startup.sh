@@ -13,4 +13,8 @@ else
   pip install -r /opt/application/requirements.txt
 fi
 
+cd /opt/application
+python manage.py collectstatic -l
+python manage.py migrate
+
 exec /usr/bin/supervisord
